@@ -10,6 +10,8 @@ import Otp from './Components/Signin/Otp/Otp';
 import Joblisting from './Components/JobListing/Joblisting';
 import JobsCard from './Components/JobsCard/JobsCard';
 import DataPrivacy from './Components/DataPrivacy/DataPrivacy';
+import TransactionHistory from './Screens/TransactionHistory';
+import Footer from './Shared/Footer/Footer';
 // import FooterMobileNav from './Shared/FooterMobileNav/FooterMobileNav';
 // import JobsCard from './Components/JobsCard/JobsCard';
 
@@ -28,9 +30,10 @@ function App() {
         <Route path="/joblisting" element={<Joblisting/>} />
         <Route path="/jobsCard" element={<JobsCard/>} />
         <Route path="/dataPrivacy" element={<DataPrivacy/>} />
+        <Route path="/transaction-history" element={<TransactionHistory/>} />
         {/* <Route path="/jobsCard" element={<FooterMobileNav/>} /> */}
       </Routes>
-   
+   <Footer/>
     </div>
   );
 }
