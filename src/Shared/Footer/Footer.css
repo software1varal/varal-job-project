@@ -1,0 +1,37 @@
+.FooterDesign{
+    background-color: #072F57;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25);
+    padding: 20px 0px 5px 0px;
+    }
+    .footerOne{
+        display: flex;
+        text-align: left;
+        align-items: center;
+        color: white;
+    }
+    .footerOne p{
+        margin-left: 2%;
+        font-size: 14px;
+    
+    }
+    .verified{
+        border: none;
+        background-color: #072F57;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 10px;
+        width: 160px;
+        border-radius: 5px;
+    margin-bottom: 20px;
+    }
+
+    @media only screen and (max-width:768px){
+      .FooterDesign{
+        display: none;
+      }
+      .getverified{
+        display: none;
+      }
+      
+    }

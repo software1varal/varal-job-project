@@ -1,0 +1,97 @@
+.JobPlate {
+    border: 1px solid #D4D2D0;
+    text-align: left;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.JobPlate h5 {
+    letter-spacing: -0.06px;
+    color: #2D2D2D;
+    font-weight: bold;
+}
+
+.seeMore {
+    margin-left: 50%;
+    color: #072F57;
+    font-weight: bold;
+    cursor: pointer;
+}
+.time{
+    color: #767676;
+    font-size: 13px;
+}
+.ratingDesing i{
+    color: gold;
+    margin-right: 2px;
+}
+.dots{
+    position: absolute;
+    right:20px;
+    top: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+.jobDes-btn{
+    border: none;
+    margin-right: 10px;
+    width:100px;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #abadaf;
+    margin:0 5px 20px 0;
+    
+}
+.jobDes-report{
+    border: none;
+    margin-right: 10px;
+    width:120px;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #000;
+    background-color: #abadaf;
+}
+.apply{
+   background-color: #072F57;
+   color: #fff;
+   font-weight: 500;
+}
+.job-description-card{
+    margin-left: 50px;
+    text-align: left;
+    padding: 50px;
+    border: 1px solid #bcb9b98c;
+    border-radius: 8px;
+}
+@media only screen and (max-width:768px){
+    .job-description-card{
+        margin: 0;
+        margin-left: 0px;
+        text-align: left;
+        padding: 50px;
+        border: 1px solid #bcb9b98c;
+        border-radius: 8px;
+    }
+    .sort-btn-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0px;
+    }
+    .sort-btn{
+    margin-right: 10px;
+    margin-top: 20px;
+    border: none;
+    background-color: #999;
+    border-radius: 5px;
+    padding: 5px 10px;
+    }
+    .country{
+        background-color: #072F57;
+        color: #fff;
+    }
+}

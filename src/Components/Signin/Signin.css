@@ -1,0 +1,272 @@
+.signin-page{
+    background: #F6F6F6;
+    height: 100%;
+    width: 100%;
+}
+.signin-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 130px;
+}
+.signinBox{
+background-color: #fff;
+height: 704px;
+width:752px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+border-radius: 5px;
+position: relative;
+}
+.wlc-sign{
+    font-size:30px;
+    font-weight: 700;
+    color: rgba(47, 47, 47, 1);
+}
+.habot{
+   /* background-image:linear-gradient(180deg, #8FB7E1 0%, #072F57 100%) !important; */
+   background-clip: text;
+  -webkit-background-clip: text; /* For Safari */
+  color: transparent;
+  background-image: linear-gradient(180deg, #8FB7E1 0%, #072F57 100%);
+}
+.sub-title{
+    font-size: 28px;
+    position: relative;
+    top: -20px;
+    font-weight: 500;
+}
+.google-btn{
+    color: #fff;
+    background-color:rgba(7, 47, 87, 1);
+    border: none;
+    border-radius: 5px;
+    width: 382px;
+    height: 59px;
+    border-radius: 6px;
+}
+.or{
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    width: 375px;
+    text-align: center;
+    
+}
+.or-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.or::before{
+    content: "";
+    background-color: #333;
+    height: 1px;
+    width: 40%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.or::after{
+    content: "";
+    background-color: #333;
+    height: 1px;
+    width: 40%;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.login-container{
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.login-frm{
+   width: 375px;
+}
+.login-field{
+    width: 100%;
+    border: 1px solid #bab7b7;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    position: relative;
+    top: -12px;
+    background-color: transparent;
+}
+.password-eye{
+    position: relative;
+}
+.hide-btn{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    top: 0%;
+    right: 10px;
+    color: #888;
+}
+.signin{
+    text-align: center;
+    width: 150px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,+50%);
+    background-color: #072F57;
+    color: #fff;
+    border: none;
+    padding:6px 10px;
+    border-radius: 5px;
+    top: 20px;
+}
+.fgt-pass-btn{
+text-align:right;
+float: right;
+position: relative;
+top: -10px;
+font-size: 16px;
+color: #111;
+}
+
+/* arrow// */
+.white-continer{
+    position: relative;
+}
+.arrow-back-btn{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    color: #111;
+    font-size: 20px;
+}
+.mobileLogo{
+    display: none;
+}
+
+/* responsive============================ */
+
+@media only screen and (max-width:768px) {
+    .signin-page{
+        background: #fff;
+        height: 100%;
+        width: 100%;
+    }
+    .signin-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top:0;
+        padding-bottom: 130px;
+    }
+    .signinBox{
+        background-color: #fff;
+        height:100%;
+        width:100%;
+        box-shadow: none;
+        border-radius: 0px;
+        position: relative;
+        }
+    .mobileLogo{
+            display: block;
+            padding-top:45px;
+        }
+    .mobileLogo img{
+            width: 40%;
+            margin-bottom: 60px;
+        }
+    .arrow-back-btn{
+            position: absolute;
+            left: 20px;
+            top: 45px;
+            color: #111;
+            font-size: 20px;
+        }
+
+    .wlc-sign{
+            font-size:25px;
+            font-weight: 600;
+        }
+    .habot{
+           /* background-image:linear-gradient(180deg, #8FB7E1 0%, #072F57 100%) !important; */
+           background-clip: text;
+          -webkit-background-clip: text; /* For Safari */
+          color: transparent;
+          background-image: linear-gradient(180deg, #000000 0%, #000000 100%);
+        }
+    .sub-title{
+            font-size: 17px;
+            position: relative;
+            top: -20px;
+            font-weight: 500;
+            color: #0a5995;
+        }
+        .google-btn{
+            color: #fff;
+            background-color:rgba(7, 47, 87, 1);
+            border: none;
+            border-radius: 5px;
+            width: 220px;
+            height: 49px;
+            border-radius: 6px;
+        }
+        .or{
+            font-size: 18px;
+            font-weight: 700;
+            position: relative;
+            width: 250px;
+            text-align: center;
+            
+        }
+        .or-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .or::before{
+            content: "";
+            background-color: #333;
+            height: 1px;
+            width: 40%;
+            position: absolute;
+            top: 15px;
+            left: 0;
+        }
+        .or::after{
+            content: "";
+            background-color: #333;
+            height: 1px;
+            width: 40%;
+            position: absolute;
+            top: 15px;
+            right: 0;
+        }
+        .login-container{
+            width: 100%;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+        .login-frm{
+            margin-top: 30px;
+           width: 280px;
+        }
+        .login-field{
+            width: 100%;
+            border: 1px solid #bab7b7;
+            border-radius: 5px;
+            padding: 10px;
+            outline: none;
+            position: relative;
+            top: -12px;
+            background-color: transparent;
+        }
+}

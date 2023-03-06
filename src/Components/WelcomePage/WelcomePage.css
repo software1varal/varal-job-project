@@ -1,0 +1,143 @@
+.findNextJob{
+    text-align: left;
+}
+.findNextJob h5{
+    font-weight: 700;
+    font-size: 20px;
+}
+.findNextJob p{
+    color: 
+    #767676;
+    font-size: 14px;
+}
+.search-input{
+    position: relative;
+}
+.search-icon{
+    position: absolute;
+    right: 20px;
+    top: 7px;
+}
+.findJobButton{
+    position: relative;
+    left: -40px;
+}
+.postjob-heading{
+    font-size: 18px;
+    color: rgb(26, 26, 92);
+    font-weight: 700;
+}
+.dropdwon-three{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.dropdwon-three div{
+   font-size: 20px;
+   border: none;
+   margin-bottom:50px ;
+   width: 100%;
+}
+
+.btn-primary{
+background-color: transparent;
+color: #111;
+border: none;
+font-size: 20px;
+font-weight: 700;
+text-align: center;
+}
+.btn-primary:focus{
+background-color: transparent !important  ;
+color: #000;
+}
+.btn-primary:hover{
+background-color: transparent !important;
+color: #000;
+}
+.drop-options{
+    text-align: center;
+    width: 210px !important;
+    font-size: 16px !important;
+    display: inline-block;
+   
+}
+.show .dropdown{
+        position:relative !important;
+        inset: 0px auto auto 0px;
+        transform: translate3d(19.2px, 44px, 0px);
+        top: -50px;
+        /* padding-bottom: 100px; */
+}
+.three-dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.accordion-button{
+  margin-top: 40px;
+  height: 50px;
+  background-color: transparent !important;
+}
+.btn .show{
+background-color: transparent !important;
+color: #000 !important;
+}
+.accordion-body{
+    width: 10ovw;
+    margin-bottom: 150px !important;
+}
+.mobile-accordian{
+    display: none;
+}
+
+ul>li{
+    list-style: none;
+}
+@media only screen and (max-width:768px) {
+   .SearchText p{
+    display: none;
+   } 
+   .search-input{
+    margin-bottom: 2px;
+   }
+   .search-icons{
+    position: relative;
+   }
+.findJobButton button {
+    padding: 4px 30px;
+    margin-top: 50px;
+    border-radius: 4px;
+    position: relative;
+    left: 12%;
+}
+.three-dropdown{
+    display: none;
+}
+.dropdwon-three{
+    display: flex;
+    flex-direction: column;
+}
+.mobile-accordian{
+    display: block;
+}
+.accordion-body{
+    margin-bottom: 0px !important;
+    padding: 0;
+}
+.dropdwon-three div{
+    margin: 0 ;
+}
+.accordion-button {
+    margin-top: 0px;
+    height:autopx;
+    background-color: transparent !important;
+}
+.accordion-header{
+    background-color:rgba(143, 183, 225, 0.3) !important;
+}
+}
+
+/*  */

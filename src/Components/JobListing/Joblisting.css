@@ -1,0 +1,90 @@
+.SearchText p{
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.findJobButton button{
+    background: #072F57;
+    color: white;
+    font-weight: bold;
+    padding: 4px 30px;
+    margin-top: 50px;
+    border-radius: 4px;
+}
+
+.buyerPostJob{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.buyerPostJob button{
+    color: #072F57;
+    font-weight: bold;
+    margin-bottom: 14px;
+    border: none;
+    background-color: white;
+}
+.habotInOtherCountry{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 13px;
+}
+.habotInOtherCountry a{
+    color: #8FB7E1;
+}
+.getVerified h3{
+    font-size: 23px;
+    margin-top: 40px;
+}
+.getVerified button{
+    background: #072F57;
+    color: white;
+    font-weight: bold;
+    padding: 4px 30px;
+    border-radius: 4px;
+    border: none;
+}
+.hrStyle{
+    color: #666;
+    width: 41%;
+    border-bottom: 1px solid #666;
+}
+
+.active>.page-link, .page-link .active{
+    z-index: 3;
+    color: #000 !important;
+    background-color: #fff !important;
+    border-color: var(--bs-pagination-active-border-color);
+}
+
+.page-link{
+   margin:40px auto;
+   margin-right: 10px;
+
+    
+    border-radius: 5px !important;
+    color: #000;
+}
+.page-link:focus{
+    background-color: rgba(7, 47, 87, 1) !important;
+    color: #fff;
+}
+.sort-btn-container{
+    display: flex;
+    margin-left: 100px;
+}
+.sort-btn{
+margin-right: 10px;
+margin-top: 20px;
+border: none;
+background-color: #999;
+border-radius: 5px;
+padding: 5px 10px;
+}
+.country{
+    background-color: #072F57;
+    color: #fff;
+}
