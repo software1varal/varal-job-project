@@ -1,10 +1,14 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
 import { Container, Nav, Navbar } from 'react-bootstrap';
-// import NavLink from 'react-bootstrap/esm/NavLink';
-import havotLogo from '../../asset/habot_logo.png'
+import { NavLink } from "react-router-dom";
 
-const Appbar = () => {
+import ProfileDropdown from './ProfileDropdown/ProfileDropdown'
+
+import havotLogo from '../../asset/habot_logo.png'
+import messageIcon from '../../asset/message-icon.svg'
+import notificationBell from '../../asset/notification-bell.svg'
+
+const Appbar = ({isLoggedIn=true}) => {
     return (
    
 
@@ -26,11 +30,27 @@ const Appbar = () => {
              <NavLink to="/">Buyer Reviews</NavLink>
              <NavLink to="/">Find Services Tags</NavLink>
          </Nav>
-         <Nav>
+         <Nav className=" nav-items">
              <NavLink to="#" className="text-dark">Get Verified</NavLink>
+             
+             {!isLoggedIn ?
+             <>
              <NavLink to="/signin" className="signin-link">Sign in</NavLink>
              <NavLink to="/" className="text-dark ps-3">Buyer: Post jobd free</NavLink>
-         </Nav>
+             </> :
+             <>
+            
+             <NavLink to="#" className='message-link'>
+             <img src={messageIcon}></img>
+             </NavLink>
+             <NavLink to="/notifications" className='notification-link'>
+             <img src={notificationBell}></img>
+             </NavLink>
+
+             <ProfileDropdown/>
+             
+             </>
+             }</Nav>
          </Navbar.Collapse>
      </Container>
      </Navbar>
