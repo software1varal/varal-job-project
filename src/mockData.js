@@ -56,3 +56,21 @@ export const trxnHistoryList = [
       transactionMethod: 'Creditcard'
     }
   ]
+
+  export const notificationList = [ 
+    {description : 'Imperial Solutions downloaded your cv',
+    time : '38',
+    read:true},
+    {description : 'Imperial Solutions viewed your cv',
+    time : '14',
+    read:false},
+    {description : 'Imperial Solutions downloaded your cv',
+    time : '54',
+    read:true},
+    {description : 'Imperial Solutions downloaded your cv',
+    time : '66',
+    read:true},{description : 'Imperial Solutions downloaded your cv',
+    time : '99',
+    read:false}
+
+  ]

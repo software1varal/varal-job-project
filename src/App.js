@@ -1,17 +1,20 @@
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import WelcomePage from './Components/WelcomePage/WelcomePage';
-import Signin from './Components/Signin/Signin';
+
+import { Route, Routes } from 'react-router-dom';
+
+import DataPrivacy from './Components/DataPrivacy/DataPrivacy';
+import Footer from './Shared/Footer/Footer';
 import ForgetPassword from './Components/Signin/ForgetPassWord/ForgetPassword';
-import SignUpFrm from './Components/Signin/SignUpFrm/SignUpFrm';
-import RestPassWord from './Components/Signin/RestPassword/RestPassWord';
-import SignupWithUserSelection from './Components/Signin/SignupWithUserSelection/SignupWithUserSelection';
-import Otp from './Components/Signin/Otp/Otp';
 import Joblisting from './Components/JobListing/Joblisting';
 import JobsCard from './Components/JobsCard/JobsCard';
-import DataPrivacy from './Components/DataPrivacy/DataPrivacy';
+import Notifications from './Components/Notifications';
+import Otp from './Components/Signin/Otp/Otp';
+import RestPassWord from './Components/Signin/RestPassword/RestPassWord';
+import SignUpFrm from './Components/Signin/SignUpFrm/SignUpFrm';
+import Signin from './Components/Signin/Signin';
+import SignupWithUserSelection from './Components/Signin/SignupWithUserSelection/SignupWithUserSelection';
 import TransactionHistory from './Components/TransactionHistory';
-import Footer from './Shared/Footer/Footer';
+import WelcomePage from './Components/WelcomePage/WelcomePage';
 // import FooterMobileNav from './Shared/FooterMobileNav/FooterMobileNav';
 // import JobsCard from './Components/JobsCard/JobsCard';
 
@@ -31,6 +34,7 @@ function App() {
         <Route path="/jobsCard" element={<JobsCard/>} />
         <Route path="/dataPrivacy" element={<DataPrivacy/>} />
         <Route path="/transaction-history" element={<TransactionHistory/>} />
+        <Route path="/notifications" element={<Notifications/>} />
         {/* <Route path="/jobsCard" element={<FooterMobileNav/>} /> */}
       </Routes>
    <Footer/>
