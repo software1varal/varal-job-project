@@ -5,8 +5,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import Appbar from "../../Shared/Navbar/Appbar";
 import FilterIconButton from "./FilterButton";
 import React from "react";
-import bellIcon from "../../asset/";
-import mailIcon from "../asset/mail.svg";
+import bellIcon from "../../asset/bell-icon.svg";
+import mailIcon from "../../asset/mail-icon.svg";
 import { notificationList } from "../../mockData";
 import openMailIcon from "../../asset/mail-open.svg";
 
