@@ -1,0 +1,74 @@
+.trxn-history-container {
+    padding-top: 61px;
+}
+
+.table-action {
+    margin-top: 12vh;
+}
+
+.trxn-title {
+    text-align: left;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+}
+
+.table-container {
+    padding-top: 32px;
+    margin-right: 18px;
+}
+
+.trxn-time {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: #767676;
+    align-self: start;
+}
+
+.react-daterange-picker__wrapper {
+    border: 1px solid #E1E7EB!important;
+    border-radius: 4px;
+    padding: 15px 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: right;
+    color: #3E3E3E;
+}
+
+.datepicker-container{
+    display: flex;
+    justify-content: right;
+    margin-right: 25px;
+}
+
+@media only screen and (max-width:768px) {
+    .trxn-history-container {
+        padding: 0 18px 0 18px;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .table-action {
+        display: none;
+    }
+
+    .trxn-time {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .trxn-title {
+        margin-top: 24px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
