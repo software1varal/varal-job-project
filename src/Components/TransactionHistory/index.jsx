@@ -1,12 +1,16 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import SearchInput from "./SearchInput";
-import Appbar from "../../Shared/Navbar/Appbar";
-import Table from "./Table";
-import { trxnHistoryList } from "../../mockData";
 import "./index.css";
 
+import { Col, Container, Row } from "react-bootstrap";
+import React, { useState } from "react";
+
+import Appbar from "../../Shared/Navbar/Appbar";
+import DateRangePicker from '@wojtekmaj/react-daterange-picker';
+import SearchInput from "./SearchInput";
+import Table from "./Table";
+import { trxnHistoryList } from "../../mockData";
+
 function TransactionHistory() {
+  const [value, onChange] = useState([new Date(), new Date()]);
   return (
     <>
       <Appbar />
@@ -22,6 +26,11 @@ function TransactionHistory() {
                   name="search"
                   showIcon={true}
                 />
+              </Col>
+              <Col className="datepicker-container">
+              <DateRangePicker 
+              onChange={onChange} value={value}
+              clearIcon={null} />
               </Col>
             </Row>
           </div>
