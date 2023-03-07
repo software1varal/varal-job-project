@@ -1,8 +1,8 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import SearchInput from "../../Components/atoms/SearchInput";
+import SearchInput from "./SearchInput";
 import Appbar from "../../Shared/Navbar/Appbar";
-import Table from "../../Components/atoms/Table";
+import Table from "./Table";
 import { trxnHistoryList } from "../../mockData";
 import "./index.css";
 

@@ -10,7 +10,7 @@ import Otp from './Components/Signin/Otp/Otp';
 import Joblisting from './Components/JobListing/Joblisting';
 import JobsCard from './Components/JobsCard/JobsCard';
 import DataPrivacy from './Components/DataPrivacy/DataPrivacy';
-import TransactionHistory from './Screens/TransactionHistory';
+import TransactionHistory from './Components/TransactionHistory';
 import Footer from './Shared/Footer/Footer';
 // import FooterMobileNav from './Shared/FooterMobileNav/FooterMobileNav';
 // import JobsCard from './Components/JobsCard/JobsCard';
