@@ -16,6 +16,7 @@ import SignupWithUserSelection from './Components/Signin/SignupWithUserSelection
 import TransactionHistory from './Components/TransactionHistory';
 import WelcomePage from './Components/WelcomePage/WelcomePage';
 import Proposal from './Components/Proposal/Proposal';
+import ProfilePage from './Components/ProfilePage/ProfilePage';
 // import FooterMobileNav from './Shared/FooterMobileNav/FooterMobileNav';
 // import JobsCard from './Components/JobsCard/JobsCard';
 
@@ -37,6 +38,7 @@ function App() {
         <Route path="/transaction-history" element={<TransactionHistory/>} />
         <Route path="/notifications" element={<Notifications/>} />
         <Route path="/proposal" element={<Proposal/>} />
+        <Route path='/profile' element={<ProfilePage/>}/>
         {/* <Route path="/jobsCard" element={<FooterMobileNav/>} /> */}
       </Routes>
    {/* <Footer/> */}
