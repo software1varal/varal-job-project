@@ -1,0 +1,44 @@
+.job-table-container {
+    text-align: left;
+    margin-top: 12%;
+    margin-bottom: 32%;
+
+}
+
+.job-table-tabs {
+    display: flex;
+    margin: 0 50px 0 30px;
+}
+
+.job-heading-1 {
+    height: 100%;
+    flex:.5;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    padding-left: 50px;
+}
+.selected-tab {
+    align-self: baseline;
+    margin-top: 15px;
+    width: 85%;
+    border-bottom: 3px solid #000000;
+}
+
+.job-heading-2 {
+    flex:.5;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: #A6A6A6;
+    text-align: center;
+
+}
+@media only screen and (max-width:768px) {
+    .job-heading-1 , .job-heading-1 {
+        font-size: 20px;
+line-height: 27px;
+    }
+}
