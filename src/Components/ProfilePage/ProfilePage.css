@@ -20,6 +20,11 @@
 
 }
 
+.profile-right-pane input {
+    background: transparent;
+    border:none;
+}
+
 
 .profile-info-section {
     display: flex;
@@ -46,11 +51,10 @@
 }
 
 .profile-info-section .member {
-    font-family: 'Satoshi';
-    font-weight: 700;
+    /* font-weight: 700; */
     font-size: 14px;
     line-height: 160%;
-
+width:21em;
     letter-spacing: 0.005em;
 
     color: #77767C;
@@ -59,6 +63,32 @@
 .profile-info-section button {
     color: #fff;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #072F57;
+    border-radius: 6px;
+    padding: 10px 19px;
+    margin: 10px 0 0 0;
+    width: 11em;
+}
+.change-password-section button {
+    color: #fff;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #072F57;
+    border-radius: 6px;
+    padding: 10px 19px;
+    margin: 10px 0 0 0;
+    width: 11em;
+}
+.save-profile-change {
+    color: #fff;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #072F57;
+    border-radius: 6px;
+    padding: 10px 19px;
+    margin: 10px 0 0 0;
+    width: 11em;
+    margin-right: 2em;
+}
+
+.cancel-profile-change {
+    color: #072F57;
+    background-color: #fff;
     border-radius: 6px;
     padding: 10px 19px;
     margin: 10px 0 0 0;
@@ -109,6 +139,13 @@
     width: 25%;
     margin-left: auto;
     align-self: center;
+}
+
+.profile-data textarea {
+height: 112px;
+width: 100%;
+background: transparent;
+border: none;
 }
 
 
@@ -183,6 +220,32 @@
     margin: 3em auto;
 }
 
+
+/* style override for edit page */
+
+.edit-enabled {
+    background-color: #fff;
+}
+
+.edit-enabled .profile-data {
+    width: 100%;
+    background: #FAFAFA;
+    border-bottom: 2px solid #EEEDF7;
+    margin-bottom:.5em;
+    padding: 1em 1em;
+}
+
+.gallery-placeholder i {
+color: #6F6F6F;
+font-size: 52px;
+margin: auto auto;
+}
+ .add-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (max-width:768px) {
     .profile-left-pane {
         display: none;
@@ -210,6 +273,9 @@
     .profile-file-details,
     .profile-gallery-detail {
         margin: auto auto;
+    }
+    .edit-enabled {
+        margin: 1em 1em;
     }
 
     .mobile-heading {
