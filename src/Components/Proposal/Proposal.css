@@ -12,7 +12,7 @@
 
 .proposal-page-heading {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 2em;
     line-height: 41px;
     border-bottom: 1px solid #D4D2D0;
     padding-bottom: 2%;
@@ -23,7 +23,7 @@
     border-bottom: 1px solid #D4D2D0;
     padding-bottom: 1.5%;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 1.5em;
     line-height: 38px;
 }
 
@@ -46,6 +46,7 @@
     letter-spacing: 0.0025em;
     margin-bottom: 10px;
 }
+
 .hori-line {
     border-bottom: 1px solid #A6A6A6;
     width: 100%;
@@ -57,8 +58,8 @@
     border: 1px solid rgba(0, 0, 0, 0.07);
     border-radius: 8px;
     width: 32em;
-    height: 4.4em;
-    margin-bottom: 8.3%;
+    height: 3.4em;
+    margin-bottom: 2em;
     max-width: 100%;
 }
 
@@ -132,12 +133,18 @@
     border: 1px solid rgba(0, 0, 0, 0.07);
     border-radius: 8px;
     width: 32em;
-    padding: 25px;
+    padding: 15px;
     max-width: 100%;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
     color: #77767C;
+    cursor: pointer;
+
+}
+
+.document-btn label {
+    cursor: pointer;
 }
 
 .document-btn i {
@@ -158,16 +165,16 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 27px;
-    padding: 25px;
+    padding: 15px;
     margin: 0 auto;
 }
 
 
 .todo-heading {
-font-weight: 700;
-font-size: 28px;
-line-height: 38px;
-margin: 5% 0;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    margin: 5% 0;
 }
 
 
@@ -175,20 +182,29 @@ margin: 5% 0;
 
     .proposal-container {
         padding: 0 1em 0 1em;
+
+    }
+
+    .mobile-label {
+        font-size: 14px;
+        line-height: 19px;
     }
 
     .proposal-page-heading {
+        font-weight: 700;
         font-size: 14px;
         line-height: 19px;
-        padding-bottom: 0;
+        margin: 0 .2em;
+
     }
 
     .proposal-job-name {
 
-        padding-bottom: 0;
+        margin: .5em .2em;
         font-weight: 700;
         font-size: 12px;
         line-height: 16px;
+
 
     }
 
@@ -207,7 +223,25 @@ margin: 5% 0;
     .proposal-content textarea {
         width: 100%;
     }
+
     .proposal-doc {
         width: 100%;
+    }
+
+    .todo-heading {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .document-btn {
+        margin: 1em 1em;
+        width: 90%;
+    }
+
+    .proposal-submit-btn button {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
     }
 }

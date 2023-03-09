@@ -17,10 +17,10 @@ function Notifications() {
       <Container>
         <div className="notifications-container">
           <Row>
-            <Col sm className="page-heading">
+            <Col className="page-heading">
               <p>Notifications ({notificationList.length})</p>
             </Col>
-            <Col sm className="filter-col">
+            <Col  className="filter-col">
               <FilterIconButton />
             </Col>
           </Row>

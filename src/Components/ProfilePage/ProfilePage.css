@@ -85,6 +85,13 @@ width:21em;
     width: 11em;
     margin-right: 2em;
 }
+.profile-data label {
+    width:100%;
+}
+.profile-data input {
+    width: 100%;
+    height: 4em
+}
 
 .cancel-profile-change {
     color: #072F57;
@@ -250,6 +257,16 @@ margin: auto auto;
     .profile-left-pane {
         display: none;
     }
+    .profile-personal,
+.profile-org-details,
+.profile-file-details {
+    width: 90vw;
+    
+}
+.profile-info-section {
+    width:90vw;
+}
+
 
     .profile-right-pane {
 
@@ -272,6 +289,7 @@ margin: auto auto;
     .profile-org-details,
     .profile-file-details,
     .profile-gallery-detail {
+        
         margin: auto auto;
     }
     .edit-enabled {

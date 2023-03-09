@@ -1,6 +1,6 @@
 .notifications-container {
     height: 100vh;
-    padding: 85px 70px 0 70px;
+    margin-top: 5em;
 }
 
 .filter-icon {
@@ -34,7 +34,7 @@
 
 .notify-list-item {
     display: flex;
-    padding: 45px 0 45px 0;
+    padding: 1.5em 0 1.5em 0;
     border-bottom: 1px solid #D4D2D0;
 }
 
@@ -43,8 +43,8 @@
 }
 
 .icon img {
-    height: 68px;
-    width: 68px;
+    height: 2em;
+    width: 2em;
     ;
 }
 
@@ -56,14 +56,14 @@
 .notification-description span {
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 22px;
     line-height: 38px;
 }
 
 .notification-description .time {
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 33px;
 
 }
@@ -73,4 +73,38 @@
     justify-content: flex-end;
 
 
+}
+
+@media only screen and (max-width:768px) {
+    .page-heading {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        margin-left: 1em;
+    }
+    .filter-col {
+        margin-right: 2em;
+    }
+    .filter-col img {
+        height: 2em;
+        width: 2em;
+        ;
+    }
+
+    .notification-description span {
+        font-size: 14px;
+        line-height: 108.2%;
+    }
+    .notification-description .time {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .icon img {
+        height: 40px;
+        width: 40px;
+    }
+    .notification-list  {
+        margin:auto 2em;
+    }
 }

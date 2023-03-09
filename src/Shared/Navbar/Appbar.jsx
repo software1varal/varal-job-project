@@ -19,8 +19,8 @@ const Appbar = ({isLoggedIn=true}) => {
      <Container>
          <Navbar.Brand href="/">
          <img className='appLogo' src={havotLogo} alt="" />
-         <NavLink to="/signin" className="signin-link mobile-login">Sign in</NavLink>
-
+         {!isLoggedIn&&<NavLink to="/signin" className="signin-link mobile-login">Sign in</NavLink>
+}
          </Navbar.Brand>
          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
          <Navbar.Collapse id="responsive-navbar-nav">
@@ -33,11 +33,13 @@ const Appbar = ({isLoggedIn=true}) => {
          <Nav className=" nav-items">
              <NavLink to="#" className="text-dark">Get Verified</NavLink>
              
-             {!isLoggedIn ?
-             <>
+             </Nav>
+         </Navbar.Collapse>
+         {!isLoggedIn ?
+             <div>
              <NavLink to="/signin" className="signin-link">Sign in</NavLink>
              <NavLink to="/" className="text-dark ps-3">Buyer: Post jobd free</NavLink>
-             </> :
+             </div> :
              <>
             
              <NavLink to="#" className='message-link'>
@@ -50,8 +52,7 @@ const Appbar = ({isLoggedIn=true}) => {
              <ProfileDropdown/>
              
              </>
-             }</Nav>
-         </Navbar.Collapse>
+             }
      </Container>
      </Navbar>
 </div>

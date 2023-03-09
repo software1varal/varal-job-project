@@ -6,6 +6,7 @@ import Overview from './OverView/Overview'
 import './Dashboard.css'
 import TransactionTable from './TransactionTable/TransactionTable'
 import JobTabTable from './JobTabTable/JobTabTable'
+import Footer from '../../Shared/Footer/Footer'
 
 function Dashboard() {
   return (
@@ -18,6 +19,7 @@ function Dashboard() {
     <JobTabTable/>
 
     </Container>
+    <Footer/>
     </>
   )
 }
