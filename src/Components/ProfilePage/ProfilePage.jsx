@@ -42,7 +42,7 @@ function ProfilePage() {
               <div className="p-0 col-lg">
               <div className="mobile-only info-section-heading mobile-heading">General Information</div>
                
-                <div className={`"profile-personal" ${editProfile && 'edit-enabled'}`}>
+                <div className={`profile-personal ${editProfile && 'edit-enabled'}`}>
                 
                 <div className="profile-data">
                   <i class="fa-solid fa-user">&nbsp;</i> 
@@ -79,7 +79,7 @@ function ProfilePage() {
                 </div>
                {/* right column for organisation info details */}
                 <div className="col-lg">
-                  <div className={`"profile-org-details" ${editProfile && 'edit-enabled'}`}>
+                  <div className={`profile-org-details ${editProfile && 'edit-enabled'}`}>
                   <div className="profile-data">
                 <i class="fa-solid fa-building"></i>DiveDeepAI
                 </div>
@@ -104,10 +104,17 @@ function ProfilePage() {
                {/* right column for file upload details */}
                 <div className="col-lg profile-file-details">
                 <div className="profile-data">
-                <i class="fa-solid fa-paperclip"></i> {editProfile ? 'Drop Files here or Browse Visa File' :'Visa File'}
+
+                {editProfile ? <><input type="file" id="upload-document-profile" hidden/>
+                <label for="upload-document-profile"><i class="fa-solid fa-paperclip"></i>Drop files or Browse Visa File</label>
+                </> :<> <i class="fa-solid fa-paperclip"></i>Visa File</>}
+                
                 </div>
                 <div className="profile-data">
-                <i class="fa-solid fa-address-card"></i> {editProfile ? 'Drop Files here or Browse Visa File' :'Emirated Id'}
+                {editProfile ? <><input type="file" id="upload-document-profile" hidden/>
+                <label for="upload-document-profile"><i class="fa-solid fa-address-card"></i>Drop files or Browse Visa File</label>
+                </> :<> <i class="fa-solid fa-address-card"></i>Emirated Id</>}
+                
                 </div>
                 </div>
             </div>
@@ -124,7 +131,7 @@ function ProfilePage() {
                 </div>
                {/* right column for change password details */}
                 <div className="col-lg">
-                  <div className={`"profile-org-details" ${editProfile && 'edit-enabled'}`}>
+                  <div className={`profile-org-details ${editProfile && 'edit-enabled'}`}>
                   <div className="profile-data">
                   <i class="fa-solid fa-lock"></i>
                 <input value='' disabled={!editProfile} placeholder='Current Password'/> 
@@ -155,7 +162,7 @@ function ProfilePage() {
                 </div>
                {/* right column for about info details */}
                 <div className="col-lg">
-                  <div className={`"profile-org-details" ${editProfile && 'edit-enabled'}`}>
+                  <div className={`profile-org-details ${editProfile && 'edit-enabled'}`}>
                   <div className="profile-data">
                 <textarea value='' disabled={!editProfile}/> 
                 </div>

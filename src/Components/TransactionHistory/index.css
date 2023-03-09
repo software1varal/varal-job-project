@@ -6,6 +6,17 @@
     margin-top: 12vh;
 }
 
+.table-container th {
+    font-size: 22px!important;
+}
+
+.table-container td {
+    font-size: 20px;
+}
+.table-container td span{
+    font-size: 18px;
+}
+
 .trxn-title {
     text-align: left;
     font-style: normal;
@@ -56,10 +67,28 @@
     }
 
     .table-action {
-        display: none;
+        
+        margin-top:0
+    }
+    .datepicker-container{
+        margin:1em auto;
+        justify-content: left;
+    }
+    .table-action input {
+
+    }
+    .table-container th {
+        font-weight: 600;
+        font-size: 12px!important;
+        line-height: 16px;
+    }
+    .table-container td {
+        font-weight: 400;
+font-size: 12px;
+line-height: 16px;
     }
 
-    .trxn-time {
+    .table-container .trxn-time {
         font-weight: 400;
         font-size: 11px;
         line-height: 15px;
@@ -70,5 +99,9 @@
         font-weight: 700;
         font-size: 18px;
         line-height: 25px;
+    }
+    .table-container {
+        padding-top:0;
+        overflow: scroll;
     }
 }

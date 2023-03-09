@@ -13,26 +13,26 @@ function TransactionHistory() {
   const [value, onChange] = useState([new Date(), new Date()]);
   return (
     <>
-      <Appbar />
+      <Appbar isLoggedIn={'true'}/>
       <Container>
         <div className="trxn-history-container">
           <p className="trxn-title">Transaction History</p>
           <div className="table-action">
-            <Row>
-              <Col>
+            <div className="row">
+              <div className="col-lg" >
                 <SearchInput
                   label="Search"
                   placeholder="Search"
                   name="search"
                   showIcon={true}
                 />
-              </Col>
-              <Col className="datepicker-container">
+              </div>
+              <div className="datepicker-container col-lg">
               <DateRangePicker 
               onChange={onChange} value={value}
               clearIcon={null} />
-              </Col>
-            </Row>
+              </div>
+            </div>
           </div>
 
           <div className="table-container">

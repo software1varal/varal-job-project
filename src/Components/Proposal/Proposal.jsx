@@ -14,16 +14,19 @@ function Proposal() {
           <div className="proposal-form-container row">
             <div className="proposal-form col-7">
             <div className="proposal-subject row">
-                <div className="proposal-label col-lg "> Subject</div>
+                <div className="proposal-label mobile-label col-lg "> Subject</div>
                 <div className=" col-lg"><input type="text" className=""/></div>
             </div>
             <div className="proposal-content row">
-            <div className="proposal-label  col-lg"> Proposal</div>
+            <div className="proposal-label mobile-label  col-lg"> Proposal</div>
             <div className=" col-lg"><textarea/></div>
             </div>
             <div className="proposal-document row">
-            <div className="proposal-doc col-lg"> Upload   Necessary Documents</div>
-            <div className="document-btn"> <i class="fa-solid fa-paperclip"></i>Drop files or Browse Visa File</div>
+            <div className="proposal-doc mobile-label col-lg"> Upload   Necessary Documents</div>
+            <div className="document-btn">
+            <input type="file" id="upload-document-profile" hidden/>
+            <label for="upload-document-profile"><i class="fa-solid fa-paperclip"></i>Drop files or Browse Visa File</label>
+               </div>
             </div>
             <div className="proposal-submit-btn">
             <button >Pay and Send Application</button>
