@@ -1,9 +1,10 @@
 .JobPlate {
-    border: 1px solid #D4D2D0;
+    border: 1px solid #d0d4d2;
     text-align: left;
     padding: 15px;
     border-radius: 8px;
     position: relative;
+    cursor: pointer;
 }
 
 .JobPlate h5 {
@@ -61,12 +62,28 @@
    color: #fff;
    font-weight: 500;
 }
+.joblisting-row{
+    display: flex;
+    align-items:start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-self: flex-start !important; 
+}
+.sticky-column {
+    /* width: 50%; */
+    position: sticky;
+    top: 20px;
+  }
 .job-description-card{
     margin-left: 50px;
     text-align: left;
     padding: 50px;
     border: 1px solid #bcb9b98c;
     border-radius: 8px;
+}
+#jobDetails{
+    opacity: 0;
 }
 @media only screen and (max-width:768px){
     .job-description-card{
@@ -94,4 +111,9 @@
         background-color: #072F57;
         color: #fff;
     }
+    .sticky-column {
+        width: 100%;
+        position: sticky;
+        top: 20px;
+      }
 }

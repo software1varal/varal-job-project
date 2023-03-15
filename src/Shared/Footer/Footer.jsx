@@ -17,9 +17,10 @@ const Footer = () => {
             <p> &copy; R Singhania</p>
             <p className='ms-5'>Accessibility at Habot</p>
             <p className='ms-5'><NavLink to="/dataPrivacy">Data Privacy</NavLink></p>
+           
             <p className='ms-5'>Cookies</p>
             <p className='ms-5'>Privacy</p>
-            <p className='ms-5'>Terms</p>
+            <p className='ms-5'><NavLink to="/tramsAndCondition">Trams</NavLink></p>
         </div>
 
         <div>

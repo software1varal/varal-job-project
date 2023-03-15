@@ -14,25 +14,31 @@ const Joblisting = () => {
 
             <Appbar />
             <Container>
-                <Row className='findjobs mt-5'>
+                <Row className='findjobs mt-5 m-2'>
                     <Col md={1}></Col>
                     <Col md={4}>
-                        <div className='SearchText'>
+                    <div className='SearchText'>
                             <p>Keyword</p>
                             <div class="search-input">
                                 <input type="Search" class="form-control rounded" placeholder="Job Title, Keywords or service Tags" aria-label="Search" aria-describedby="search-addon" />
-                                <span className="search-icon">
+                                <span className="what-input">
+                                <h6>What</h6>
+                            </span>
+                                <span className="search-icon-input">
                                     <i class="fas fa-search"></i>
                                 </span>
                             </div>
                         </div>
                     </Col>
                     <Col md={4}>
-                        <div className='SearchText'>
+                    <div className='SearchText'>
                             <p>Location</p>
                             <div class="search-input">
                                 <input type="Search" class="form-control rounded" placeholder="City or" aria-label="Search" aria-describedby="search-addon" />
-                                <span className="search-icon">
+                                <span className="what-input">
+                                <h6>Where</h6>
+                            </span>
+                                <span className="search-icon-input">
                                     <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 </span>
                             </div>

@@ -3,6 +3,7 @@ import "./ProfileDropdown.css";
 
 import userProfile from '../../../asset/user-profile.svg'
 import settingsIcon from '../../../asset/setting-icon.svg'
+import { NavLink } from "react-router-dom";
 
 
 export default function ProfileDropdown({onSelect}) {
@@ -48,12 +49,15 @@ export default function ProfileDropdown({onSelect}) {
           className={`menu ${isActive ? "active" : "inactive"}`}
         >
           <div className='user-email'>ruhmaTraiq007@gmail.com</div>
-          <ul onClick={handleOptionClick}>
+          <ul onClick={handleOptionClick} className="ps-3">
             <li>
               <a href="#"><i class="fa-regular fa-circle-user"></i>My Profile</a>
             </li>
             <li>
-              <a href="#"><i class="fa-regular fa-heart"></i>Saved Jobs</a>
+              <NavLink to='/postedJobsList'><i class="fa-regular fa-heart"></i>Saved Jobs</NavLink>
+            </li>
+            <li>
+              <NavLink to='/postjobone'><i class="fa-solid fa-briefcase"></i> Post Jobs</NavLink>
             </li>
             <li>
               <a href="#"><i class="fa-regular fa-comment-dots"></i>Reviews</a>

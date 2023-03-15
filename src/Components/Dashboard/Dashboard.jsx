@@ -17,7 +17,6 @@ function Dashboard() {
     <Overview/>
     <TransactionTable/>
     <JobTabTable/>
-
     </Container>
     <Footer/>
     </>
