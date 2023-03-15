@@ -43,10 +43,10 @@ const Appbar = ({isLoggedIn=true}) => {
              <>
             
              <NavLink to="#" className='message-link'>
-             <img src={messageIcon}></img>
+             <img src={messageIcon} alt="" ></img>
              </NavLink>
              <NavLink to="/notifications" className='notification-link'>
-             <img src={notificationBell}></img>
+             <img src={notificationBell} alt=""></img>
              </NavLink>
 
              <ProfileDropdown/>

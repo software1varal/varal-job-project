@@ -1,0 +1,125 @@
+.progressLineTab{
+    margin-top: 80px;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+.currentTabOne{
+    height: 69px;
+    width: 32%;
+    position: relative;
+    overflow: hidden;
+    background-color:rgba(7, 47, 87, 1);
+}
+.currentTabTwo{
+    height: 69px;
+    width: 36%;
+    position: relative;
+    overflow: hidden;
+    background-color:rgb(255, 255, 255) ;
+}
+.currentTabThree{
+    height: 69px;
+    width: 32%;
+    position: relative;
+    overflow: hidden;
+    background-color:rgb(255, 255, 255) ;
+}
+
+.currentShaptop{
+    position: absolute;
+    background-color: #ffffff;
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    right: -61px;
+    transform: rotate(45deg);
+    border-bottom: 1px solid #ccc;
+}
+.currentShapbottom{
+    
+    position: absolute;
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    right: -61px;
+    bottom: -40px;
+    transform: rotate(-45deg);
+    border-top: 1px solid #ccc;
+
+}
+.progress-text{
+    font-size: 20px;
+}
+
+
+.viwJob-post-card{
+    border: 1px solid #ddd;
+    margin: 50px 0;
+}
+.top-line-jobView{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media only screen and (max-width:768px){
+    .progressLineTab{
+        margin-top: 80px;
+        height: 50px;
+        width: 100%;
+        border: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+    }
+    .currentTabOne{
+        height: 49px;
+        width: 32%;
+        position: relative;
+        overflow: hidden;
+        background-color:rgba(7, 47, 87, 1) ;
+    }
+    .currentTabTwo{
+        height: 49px;
+        width: 36%;
+        position: relative;
+        overflow: hidden;
+        background-color:rgb(255, 255, 255) ;
+    }
+    .currentTabThree{
+        height: 49px;
+        width: 32%;
+        position: relative;
+        overflow: hidden;
+        background-color:#fff ;
+    }
+    
+    .currentShaptop{
+        position: absolute;
+        background-color: #ffffff;
+        width: 60px;
+        height: 60px;
+        top: -46px;
+        right: -31px;
+        transform: rotate(45deg);
+        border-bottom: 1px solid #ccc;
+    }
+    .currentShapbottom{
+        
+        position: absolute;
+        background-color: #fff;
+        width: 60px;
+        height: 60px;
+        right: -31px;
+        bottom: -46px;
+        transform: rotate(-45deg);
+        border-top: 1px solid #ccc;
+    
+    }
+    .progress-text{
+        font-size: 12px;
+    }
+}

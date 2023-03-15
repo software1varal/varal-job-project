@@ -13,7 +13,15 @@
 .search-input{
     position: relative;
 }
-.search-icon{
+.search-input input{
+    padding-left: 80px;
+}
+.what-input{
+    position: absolute;
+    left: 20px;
+    top: 7px;
+}
+.search-icon-input{
     position: absolute;
     right: 20px;
     top: 7px;
@@ -106,6 +114,16 @@ ul>li{
    .search-icons{
     position: relative;
    }
+   .search-input input{
+    padding-left: 70px;
+}
+.search-icon-input{
+    right: 10px;
+    display: none;
+}
+.what-input{
+    left: 10px;
+}
 .findJobButton button {
     padding: 4px 30px;
     margin-top: 50px;
@@ -114,7 +132,10 @@ ul>li{
     left: 12%;
 }
 .three-dropdown{
-    display: none;
+    flex-direction: column;
+}
+.three-dropdown ul{
+    margin-top: 20px;
 }
 .dropdwon-three{
     display: flex;

@@ -1,0 +1,97 @@
+.post-job-status{
+    color:rgba(64, 194, 3, 1);
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.view-posted-job{
+    padding: 8px 10px;
+    background-color:rgba(7, 47, 87, 1) ;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.promote-posted-job{
+    padding: 7px 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 20px;
+    color: #000;
+}
+.proposal-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.post-job-card{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.posted-job-btn-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.posted-job-btn-list button{
+   margin-right: 10px;
+   border: none;
+   padding: 6px 10px;
+   border-radius: 5px;
+   font-weight: 500;
+   margin-top: 5px;
+}
+.jobList-bootstrap-btn{
+    background-color: #eee;
+}
+.posted-job-btn-list button:focus{
+   background-color:rgba(7, 47, 87, 1);
+   color: #fff;
+}
+.posted-job-btn-list button:focus{
+   background-color:rgba(7, 47, 87, 1);
+   color: #fff;
+}
+.searchAndDate{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.joblist-search{
+    position: absolute;
+    margin-left: 20px;
+}
+.searchAndDate input{
+    border-radius: 5px;
+    outline: none;
+    border: 1.5px solid #ddd;
+    padding: 10px 20px;
+    padding-left: 60px;
+    width: 50%;
+}
+.searchAndDate select{
+    border-radius: 5px;
+    outline: none;
+    border: 1.5px solid #ddd;
+    padding: 10px 20px;
+}
+@media only screen and (max-width:768px) {
+    .post-job-card{
+        border:none;
+        box-shadow: none !important;
+    }
+    .post-job-container{
+        border: 1px solid #ddd;
+        border-radius: 10px;
+    }
+    .searchAndDate select{
+        display: none;
+    }
+    .searchAndDate input{
+        width: 100%;
+    }
+    
+}

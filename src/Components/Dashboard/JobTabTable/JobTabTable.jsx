@@ -1,5 +1,5 @@
 import React from 'react'
-import { jobList } from '../../../mockData';
+import { trxnHistoryList } from '../../../mockData';
 import Table from '../../TransactionHistory/Table';
 import './JobTabTable.css'
 
@@ -30,7 +30,7 @@ function JobTabTable() {
                 ))}
               </thead>
               <tbody>
-                {jobList.slice(0,3).map((job, index) => {
+                {trxnHistoryList.slice(0,3).map((job, index) => {
                   let statusColor =
                     job.status === "Active"
                       ? "#34DA26"
